@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ML artifacts (large binaries — regenerate via `uv run python -m app.ml.train`)
+backend/app/ml/artifacts/*.json
+backend/app/ml/artifacts/*.pkl
+backend/app/ml/artifacts/*.joblib
+!backend/app/ml/artifacts/.gitkeep
+!backend/app/ml/artifacts/metrics.json
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+frontend/.env*.local
+frontend/*.tsbuildinfo
+
+# Env
+.env
+.env.local
+
+# OS
+.DS_Store
+
+# DB
+*.sqlite3
+pgdata/
