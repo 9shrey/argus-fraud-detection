@@ -23,4 +23,8 @@ RUN uv run python -m app.ml.train
 ENV PORT=8000
 EXPOSE 8000
 
-CMD ["sh", "-c", "uv run uvicorn app.main:app --host 0.0.0.0 --port ${PORT}"]
+# Invoke the venv's uvicorn directly, not `uv run` — `uv run` re-checks the
+# project sync on every invocation (a few seconds of "Building/Installing"
+# noise on every container start), which is pure overhead once the image is
+# already fully synced at build time.
+CMD ["sh", "-c", ".venv/bin/uvicorn app.main:app --host 0.0.0.0 --port ${PORT}"]
