@@ -11,7 +11,7 @@ the model's ROC/PR curves against a proper chronological holdout.
 
 ![Live dashboard](docs/screenshots/01-dashboard.png)
 
-**[Live demo](#)** · **[API docs](#)** (FastAPI's `/docs`, once deployed)
+**[Live demo](https://argus-fraud-detection.vercel.app)** — ⚠️ backend not deployed yet, so the UI loads but shows "Can't reach the API" until Render's live · **API docs**: FastAPI's `/docs`, once deployed
 
 ## What this actually demonstrates
 
