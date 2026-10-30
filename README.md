@@ -11,7 +11,7 @@ the model's ROC/PR curves against a proper chronological holdout.
 
 ![Live dashboard](docs/screenshots/01-dashboard.png)
 
-**[Live demo](https://argus-fraud-detection.vercel.app)** — ⚠️ backend not deployed yet, so the UI loads but shows "Can't reach the API" until Render's live · **API docs**: FastAPI's `/docs`, once deployed
+**Running it:** there is no hosted demo right now. Run it locally with Docker Compose in a couple of minutes (see [Quickstart](#quickstart)), or browse the [screenshots](#screenshots). FastAPI's interactive API docs are at `/docs` once the backend is running.
 
 ## What this actually demonstrates
 
